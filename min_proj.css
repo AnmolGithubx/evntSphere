@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    color: #000000;
+}
+
+.logo {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 50px;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.nav_links li a:hover {
+    font-size: 18px;
+}
+
+
+.artist_nav_link {
+    background-color: #d5d5d5;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.artist_nav_link:hover {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcc00;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.h1_heading {
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-style: normal;
+    font-size: 100px;
+    line-height: 0.9;
+}
+
+.main-title {
+    font-family: "Cinzel", serif;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 0.9;
+}
+
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.subtitle p {
+    width: 45%;
+    margin: 0;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .main-title, .subtitle {
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+.custom-icon {
+    color: #000000;
+    width: 100px;
+    height: 100px;
+}
+
+
+    section {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffffff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      gap: 30px;
+      flex-wrap: wrap;
+    } 
+
+    .card {
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+
+    .search-card {
+      width: 300px;
+      height: 350px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+      justify-content: center;
+      border-radius: 30px;
+    }
+
+    .search-input {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 12px 20px;
+      border-radius: 25px;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .search-input input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 1rem;
+    }
+
+    .result {
+      display: flex;
+      background: rgba(255,255,255,0.9);
+      padding: 10px;
+      border-radius: 15px;
+      gap: 12px;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .result:hover {
+      background: #efefef;
+    }
+
+    .result img {
+      height: 48px;
+      width: 48px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .result strong {
+      font-size: 1rem;
+    }
+
+    .result small {
+      color: #555;
+    }
+
+    .black-card {
+      width: 200px;
+      height: 350px;
+      border-radius: 30px;
+      overflow: hidden;
+      background: #111;
+      position: relative;
+    }
+
+    .black-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.8);
+    }
+
+    .green-card {
+      background: linear-gradient(135deg, #69f0ae, #00e676);
+      width: 160px;
+      height: 350px;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      text-align: center;
+    }
+
+    .green-card div {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .green-card span {
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      .green-card {
+        animation: float 3s ease-in-out infinite;
+      }
+      
